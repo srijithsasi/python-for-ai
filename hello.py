@@ -11,3 +11,4 @@ class Cat:
 jerry = Dog("jerry","labrador")
 
 print(jerry.breed)
+print (jerry.name)
