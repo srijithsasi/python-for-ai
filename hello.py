@@ -1,13 +1,10 @@
-class Dog :
-    def __init__(self,name,breed):
-        self.name=name
-        self.breed=breed
+import os
+from dotenv import load_dotenv
 
-class Cat:
-    def __init__(self,name,color):
-        self.name=name
-        self.color=color
 
-jerry = Dog("jerry","labrador")
 
-print(jerry.breed)
+# Read from environment
+api_key = os.environ.get('API_KEY')
+database = os.environ.get('DATABASE_NAME', 'default.db')
+
+print(f"Using database: {api_key}")
